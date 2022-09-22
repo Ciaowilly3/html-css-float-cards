@@ -11,6 +11,8 @@ body > div{
     clear: both;  
 }
 
+/* stilizzo la scritta nell'header */
+
 header h1{
     margin: 2rem 0px 3rem;
     text-align: center;
@@ -19,36 +21,53 @@ header h1{
 header p{
     text-align: center;
 }
+
 /* fine stili per header  */
-main *:not(div h6){
-    float: left;
-    color: white;
-}
+
+/* stili per l'interno cards */
 img{
     width: 100px;
-}
-
-main div h4{
-    color: aliceblue;
-    font-weight: 1000;
-    margin: .7rem 0px .7rem;
-}
-
-.row{
-    content: "";
-    display: table;
-    clear: both;  
-    background-color: black;  
-    box-shadow: 2px 2px 2px 2px gray;
-    width: 300px;
 }
 
 main section{
     margin-left: .7rem;
 }
+
 h6{
     margin: 0px 0px .7rem;
 }
+
 .email{
     color: #63cbf2;
+}
+
+
+/* stili per il posizionamento */
+main *:not(div h6){
+    float: left;
+    color: white;
+}
+
+
+main div h4{
+    color: rgb(254, 254, 254);
+    font-weight: 1000;
+    margin: .7rem 0px .7rem;
+}
+
+.card{
+    content: "";
+    display: table;
+    clear: both;  
+}
+.row{
+    margin-bottom: 3rem;
+    width: calc((100% / 3) - (64px / 3));
+    margin-right: 32px;
+    background-color: black;  
+    box-shadow: 2px 2px 2px 2px gray;
+
+}
+div :nth-of-type(3n+0){
+    margin-right: 0px;
 }
