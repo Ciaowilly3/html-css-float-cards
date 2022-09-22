@@ -20,6 +20,7 @@ header h1{
 }
 header p{
     text-align: center;
+    margin-bottom: 2rem;
 }
 
 /* fine stili per header  */
@@ -60,7 +61,7 @@ main div h4{
     display: table;
     clear: both;  
 }
-.row{
+.col{
     margin-bottom: 3rem;
     width: calc((100% / 3) - (64px / 3));
     margin-right: 32px;
